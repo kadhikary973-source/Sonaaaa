@@ -1,0 +1,381 @@
+cat index.html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Sona ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+min-height:100vh;
+font-family:sans-serif;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#ff4b7d,#ff91b5,#ffc1cc);
+overflow-x:hidden;
+}
+
+.card{
+width:90%;
+max-width:400px;
+margin:50px auto;
+padding:25px 20px;
+border-radius:30px;
+background:#ffffff35;
+backdrop-filter:blur(12px);
+box-shadow:0 10px 40px #a0004560;
+}
+
+h1{
+font-size:42px;
+text-shadow:0 0 15px white;
+}
+
+.photo{
+width:85%;
+max-width:280px;
+border-radius:25px;
+border:4px solid white;
+box-shadow:0 0 25px #ff0055;
+}
+
+.heart{
+font-size:65px;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.3)}
+}
+
+button{
+background:#ff1744;
+color:white;
+border:2px solid white;
+border-radius:30px;
+padding:14px 25px;
+font-size:17px;
+margin:15px;
+}
+
+#letter{
+display:none;
+line-height:2;
+font-size:17px;
+}
+
+.floating{
+position:fixed;
+bottom:-30px;
+animation:fly 6s linear infinite;
+pointer-events:none;
+}
+
+@keyframes fly{
+to{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: linear-gradient(135deg,#ff1744,#ff5f9e,#c850c0,#ff9a9e);
+background-size: 400% 400%;
+animation: bgmove 12s ease infinite;
+}
+
+@keyframes bgmove {
+0% {background-position:0% 50%}
+50% {background-position:100% 50%}
+100% {background-position:0% 50%}
+}
+
+.card, section {
+backdrop-filter:blur(15px);
+border:1px solid #ffffff70;
+transition:transform .4s,box-shadow .4s;
+}
+
+h1,h2 {
+text-shadow:0 0 12px white,0 0 25px #ff1744;
+}
+
+.photo {
+animation:glow 3s infinite alternate;
+}
+
+@keyframes glow {
+from {box-shadow:0 0 10px white}
+to {box-shadow:0 0 35px #ff1744}
+}
+
+button {
+cursor:pointer;
+box-shadow:0 0 15px #ff1744;
+transition:transform .3s;
+}
+
+button:hover {
+transform:scale(1.08);
+}</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="heart">❤️</div>
+
+<h1>Sonaaa</h1>
+
+<p>আমার ছোট্ট রাজকন্যার জন্য ❤️</p>
+
+<img src="Sona.jpg" class="photo">
+
+<br>
+
+<button onclick="showLetter()">
+একবার ক্লিক করো সোনা 💗
+</button>
+
+<div id="letter">
+
+<h2>সোনা 🥺❤️</h2>
+
+<p>
+এই সোনা, আমার উপর রাগ করে থেকো না।<br>
+আমি তোমাকে কষ্ট দিতে চাইনি।<br>
+তুমি আমার কাছে অনেক স্পেশাল।<br>
+তোমার হাসিটা আমার খুব প্রিয়।<br>
+প্লিজ আমার উপর রাগ ভাঙাও।<br>
+আর অভিমান করে থেকো না। ❤️
+</p>
+
+<h2>Sorry Sona 🥺💗</h2>
+
+<p>অনেক অনেক ভালোবাসি তোমাকে। ❤️</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+function createHeart(){
+let heart=document.createElement("div");
+heart.className="floating";
+heart.innerHTML=["❤️","💗","💕","💖","🌸"][Math.floor(Math.random()*5)];
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(20+Math.random()*25)+"px";
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>cat index.html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Sona ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+min-height:100vh;
+font-family:sans-serif;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#ff4b7d,#ff91b5,#ffc1cc);
+overflow-x:hidden;
+}
+
+.card{
+width:90%;
+max-width:400px;
+margin:50px auto;
+padding:25px 20px;
+border-radius:30px;
+background:#ffffff35;
+backdrop-filter:blur(12px);
+box-shadow:0 10px 40px #a0004560;
+}
+
+h1{
+font-size:42px;
+text-shadow:0 0 15px white;
+}
+
+.photo{
+width:85%;
+max-width:280px;
+border-radius:25px;
+border:4px solid white;
+box-shadow:0 0 25px #ff0055;
+}
+
+.heart{
+font-size:65px;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.3)}
+}
+
+button{
+background:#ff1744;
+color:white;
+border:2px solid white;
+border-radius:30px;
+padding:14px 25px;
+font-size:17px;
+margin:15px;
+}
+
+#letter{
+display:none;
+line-height:2;
+font-size:17px;
+}
+
+.floating{
+position:fixed;
+bottom:-30px;
+animation:fly 6s linear infinite;
+pointer-events:none;
+}
+
+@keyframes fly{
+to{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: linear-gradient(135deg,#ff1744,#ff5f9e,#c850c0,#ff9a9e);
+background-size: 400% 400%;
+animation: bgmove 12s ease infinite;
+}
+
+@keyframes bgmove {
+0% {background-position:0% 50%}
+50% {background-position:100% 50%}
+100% {background-position:0% 50%}
+}
+
+.card, section {
+backdrop-filter:blur(15px);
+border:1px solid #ffffff70;
+transition:transform .4s,box-shadow .4s;
+}
+
+h1,h2 {
+text-shadow:0 0 12px white,0 0 25px #ff1744;
+}
+
+.photo {
+animation:glow 3s infinite alternate;
+}
+
+@keyframes glow {
+from {box-shadow:0 0 10px white}
+to {box-shadow:0 0 35px #ff1744}
+}
+
+button {
+cursor:pointer;
+box-shadow:0 0 15px #ff1744;
+transition:transform .3s;
+}
+
+button:hover {
+transform:scale(1.08);
+}</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="heart">❤️</div>
+
+<h1>Sonaaa</h1>
+
+<p>আমার ছোট্ট রাজকন্যার জন্য ❤️</p>
+
+<img src="Sona.jpg" class="photo">
+
+<br>
+
+<button onclick="showLetter()">
+একবার ক্লিক করো সোনা 💗
+</button>
+
+<div id="letter">
+
+<h2>সোনা 🥺❤️</h2>
+
+<p>
+এই সোনা, আমার উপর রাগ করে থেকো না।<br>
+আমি তোমাকে কষ্ট দিতে চাইনি।<br>
+তুমি আমার কাছে অনেক স্পেশাল।<br>
+তোমার হাসিটা আমার খুব প্রিয়।<br>
+প্লিজ আমার উপর রাগ ভাঙাও।<br>
+আর অভিমান করে থেকো না। ❤️
+</p>
+
+<h2>Sorry Sona 🥺💗</h2>
+
+<p>অনেক অনেক ভালোবাসি তোমাকে। ❤️</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+function createHeart(){
+let heart=document.createElement("div");
+heart.className="floating";
+heart.innerHTML=["❤️","💗","💕","💖","🌸"][Math.floor(Math.random()*5)];
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(20+Math.random()*25)+"px";
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>
